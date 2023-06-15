@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main: The entry point of this program
- * Return - Always 0
+ * Description: This program returns a specific text
+ * Return: Always 0
  */
 int main(void)
 {

@@ -11,6 +11,7 @@ int main(void)
 	long l;
 	long long ll;
 	float f;
+
 	c = 'C';
 	i = 4;
 	l = 4;

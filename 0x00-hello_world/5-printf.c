@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * description - This program returns a specific text
- * main - Entry point of this program
+ * main - Entry point
  * Return: 0
  */
 int main(void)

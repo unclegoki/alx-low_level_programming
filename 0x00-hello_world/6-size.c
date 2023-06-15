@@ -17,9 +17,10 @@ int main(void)
 	l = 4;
 	ll = 5;
 	f = 5;
-	printf("Size of a char: %c", c);
-	printf("Size of a intr: %d", i);
-	printf("Size of a long int: %l", l);
-	printf("Size of a long long: %l", l);
-	printf("Size of a float: %df", f);
+
+	printf("Size of a char: %c\n", c);
+	printf("Size of a intr: %d\n", i);
+	printf("Size of a long int: %l\n", l);
+	printf("Size of a long long: %l\n", ll);
+	printf("Size of a float: %d\n", f);
 }

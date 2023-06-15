@@ -18,10 +18,10 @@ int main(void)
 	ll = 5;
 	f = 5;
 
-	printf("Size of a char: %lu.\n", (unsigned long)sizeof(c));
-	printf("Size of a int: %lu.\n", (unsigned long)sizeof(i));
-	printf("Size of a long int: %lu.\n", (unsigned long)sizeof(l));
-	printf("Size of a long long: %lu.\n", (unsigned long)sizeof(ll));
-	printf("Size of a float: %lu.\n", (unsigned long)sizeof(f));
+	printf("Size of a char: %lu byte(s) \n", (unsigned long)sizeof(c));
+	printf("Size of a int: %lu byte(s) \n", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s) \n", (unsigned long)sizeof(l));
+	printf("Size of a long long: %lu byte(s) \n", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte(s) \n", (unsigned long)sizeof(f));
 	return (0);
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
 /*
- * main - This program prints out a text
- *
+ * main - first C program
  * Return: Always 0 (Success)
  */
 int main(void)

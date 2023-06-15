@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc mams=intel $CFILE -o ${CFILE%.c}.s

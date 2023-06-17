@@ -11,8 +11,8 @@ int main(void){
 	int n;
 	char newLine;
 
-	newLine = '\n';
-	a = '68';
+	newLine = '10';
+	a = '97';
 	n = 1;
 	while (n < 27){
 		putchar(a);

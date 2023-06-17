@@ -8,7 +8,7 @@
  * main - Entry point
  *
  * description - This program tests random numbers
- * Return - 0
+ * Return: 0
  */
 int main(void)
 {
@@ -19,13 +19,13 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	} else if (n == 0)
 	{
-		printf("%d is zero", n);
-	} else 
+		printf("%d is zero\n", n);
+	} else
 	{
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }

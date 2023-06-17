@@ -8,14 +8,17 @@
  */
 int main(void){
 	char a;
+	int n;
 	char newLine;
 
 	newLine = '10';
-	a = 'a';
-	while (a <= 'z' ){
+	a = '97';
+	n = 1;
+	while (n < 27){
 		putchar(a);
+		putchar(newLine);
 		a++;
+		n++;
 	}
-	putchar(newLine);
 	return (0);
 }

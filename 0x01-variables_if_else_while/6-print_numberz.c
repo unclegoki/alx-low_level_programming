@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-    int i;
+	int i;
 
-    i = 48;
-    while(i < 58)
-    {
-        putc(i, stdout);
-        i++;
-    }
-    putchar(10);
-    return (0);
+	i = 48;
+	while(i < 58)
+	{
+		putc(i, stdout);
+		i++;
+	}
+	putchar(10);
+	return (0);
 }

@@ -2,7 +2,7 @@
 
 /**
  * main- Entry point
- * 
+ *
  * description- This program prints the alphabets in reverse form;
  * Return: 0, always
 */

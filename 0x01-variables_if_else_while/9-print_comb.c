@@ -9,21 +9,14 @@
 int main(void)
 {
 	int i;
-	int j;
 
 	i = 0;
-	j = 0;
 	while (i < 10)
 	{
 		putchar(i);
 		i++;
-		while (j < 10)
-		{
-			putchar(j);
-			j++;
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(',');
+		putchar(' ');
 	}
 	return (0);
 }

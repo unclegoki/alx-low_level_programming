@@ -9,8 +9,10 @@
 int main(void)
 {
 	int i;
+	int j;
 
 	i =48;
+	j = 97;
 	while (i < 58)
 	{
 		putchar(i);

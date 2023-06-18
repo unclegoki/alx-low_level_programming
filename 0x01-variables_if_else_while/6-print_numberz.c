@@ -8,9 +8,7 @@
 int main(void)
 {
     int i;
-    int ch;
-    int d;
-    ch = 65;
+
     i = 48;
     while(i < 58)
     {

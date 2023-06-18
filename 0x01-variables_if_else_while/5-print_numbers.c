@@ -1,5 +1,5 @@
-#include <stdio.h> 
-/** 
+#include <stdio.h>
+/**
   *main- Entry point
   *
   *description- print numbers from 1 - 10
@@ -12,8 +12,9 @@ int main(void)
 	i = 0;
 	while (i < 10)
 	{
-		printf("%d\n", i);
+		printf("%d", i);
 		i++;
 	}
+	print("\n");
 	return (0);
 }

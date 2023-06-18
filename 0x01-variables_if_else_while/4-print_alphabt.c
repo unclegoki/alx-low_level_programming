@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry poing
- * 
- * description - Alphabet program
- * Return 0
+ *main - Entry point
+ *
+ *description - Alphabet program
+ *Return: 0
  */
 int main(void)
 {

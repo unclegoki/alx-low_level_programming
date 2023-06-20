@@ -5,7 +5,7 @@
  * description- A program to check the case of an alphabet
  * Return: 0, always
  */
-int _islowewr(int c)
+int _islower(int c)
 {
 	if (c < 97 || c > 122 )
 	{

@@ -16,10 +16,10 @@ void print_alphabet_x10(void)
 		a = 97;
 		while (a <= 'z')
 		{
-			_putchar(a);
+			putchar(a);
 			a++;
 		}
 		i++;
 	}
-	_putchar(10);
+	putchar(10);
 }

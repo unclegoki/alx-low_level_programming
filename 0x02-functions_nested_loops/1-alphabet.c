@@ -16,7 +16,3 @@ void print_alphabet(void)
 	}
 	putchar(10);
 }
-int main(void)
-{
-	return (0);
-}

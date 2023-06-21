@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * _islower- checks if a letter is lowercase
- * @c - parameter to hold letter
+ * @c: parameter to hold letter
  *
  * description- A program to check the case of an alphabet
  *

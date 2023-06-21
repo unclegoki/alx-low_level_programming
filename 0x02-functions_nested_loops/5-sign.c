@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * _isalpha- checks if a character is an alphabet
- * @c: parameter to hold the character
+ * print_sign- checks if a number is negative or positive or zero
+ * @c: parameter to hold the number
  *
  * description- A program to check the case of an alphabet
  *
  * Return: 0, always
  */
-int _isalpha(int c)
+int print_sign(int n)
 {
 	{
 	if (n > 0)

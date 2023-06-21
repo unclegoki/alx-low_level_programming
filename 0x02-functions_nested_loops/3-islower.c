@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
  * _islower- checks if a letter is lowercase
+ * @c - parameter to hold letter
  *
  * description- A program to check the case of an alphabet
- * @argc - parameter to hold letter
+ *
  * Return: 0, always
  */
 int _islower(int c)

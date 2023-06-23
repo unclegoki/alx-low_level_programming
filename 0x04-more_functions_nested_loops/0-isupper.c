@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * main - Entry point
  * _isupper - this function tests a letter
  * @c: a parameter accepted by the above function to hold the letter beign tested 
  *

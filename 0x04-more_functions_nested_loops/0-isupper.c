@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
- * _isupper - this function tests a letter
- * @c: a parameter accepted by the above function to hold the letter beign tested
- * Return: 1, always
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 int _isupper(int c)
 {

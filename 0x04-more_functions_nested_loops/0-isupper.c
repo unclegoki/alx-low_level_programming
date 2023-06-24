@@ -1,10 +1,8 @@
 #include "main.h"
 /**
  * _isupper - this function tests a letter
- * @c: a parameter accepted by the above function to hold the letter beign tested 
- *
- * description - A program that checks the case of letters
- * Return: 0, always
+ * @c: a parameter accepted by the above function to hold the letter beign tested
+ * Return: 1, always
  */
 int _isupper(int c)
 {

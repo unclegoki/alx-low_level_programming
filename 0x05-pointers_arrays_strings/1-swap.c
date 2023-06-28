@@ -4,7 +4,7 @@
  * @a: First argument
  * @b: Seond argument
  */
-void swap_int(int *a, int *b)
+void swap_int(int **a, int **b)
 {
 	int *text = NULL;
 

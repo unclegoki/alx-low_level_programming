@@ -2,9 +2,9 @@
 /**
  *_abs - Entry point
  *
- * @n - int to be checked
+ * @n: int to be checked
  *description - Return absolute value of int
- * return: 0, always
+ * return: absolute value of int
  */
 int _abs(int n)
 {

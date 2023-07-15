@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_sign- checks if a number is negative or positive or zero
- * @c: parameter to hold the number
+ * @n: parameter to hold the number
  *
  * description- A program to check the case of an alphabet
  *
@@ -11,15 +11,15 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar('+' + n);
+		_putchar('+');
 		return (1);
 	} else if(n == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return (0);
 	} else
 	{
-		putchar('-');
+		_putchar('-');
 		return (-1);
 	}
 }

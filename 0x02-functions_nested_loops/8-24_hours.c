@@ -9,9 +9,9 @@ void jack_bauer(void)
        
 	min = '0';
 	hour = '0';
-	while (hour < '24')
+	while (hour < 24)
 	{
-		while (min < '60')
+		while (min < 60)
 		{
 			min++;
 		}

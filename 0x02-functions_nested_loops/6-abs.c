@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_abs - Entry point
+ *_abs - A function to check if an it is absolute
  *
  * @n: int to be checked
  *description - Return absolute value of int

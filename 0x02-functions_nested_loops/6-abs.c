@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *abs - Entry point
+ *_abs - Entry point
  *
+ * @n - int to be checked
  *description - Return absolute value of int
  * return: 0, always
  */

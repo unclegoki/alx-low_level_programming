@@ -4,7 +4,7 @@
  *
  * @n: int to be checked
  *description - Return absolute value of int
- * return: absolute value of int
+ * Return: absolute value of int
  */
 int _abs(int n)
 {

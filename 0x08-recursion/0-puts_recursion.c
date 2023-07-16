@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * _puts_recursion(char *s)
+ * _puts_recursion - print a string and a new line
+ *
+ * description - a program to simulate the puts fxn
  * @s: pointer of arg
  */
 void _puts_recursion(char *s)

@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_numbers - to print numbers
+ * print_numbers - to prcharnumbers
  */
 void print_numbers(void)
 {
-	int num;
+	char um;
 
 	num = 0;
 	while (num <= '9')

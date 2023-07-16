@@ -4,13 +4,13 @@
  */
 void print_numbers(void)
 {
-	char um;
+	char num;
 
-	num = 0;
+	num = '0';
 	while (num <= '9')
 	{
-		putchar(num);
+		_putchar(num);
 		num++;
 	}
-	putchar(\n);
+	_putchar('\n');
 }

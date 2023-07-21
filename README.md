@@ -1,1 +1,1 @@
-This is a repo to store all my C projects
+This is the readme file for the Variadic functions project.

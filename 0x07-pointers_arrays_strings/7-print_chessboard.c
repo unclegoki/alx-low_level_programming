@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_chessboard - to print a chessboard
  * @a: location of tiles

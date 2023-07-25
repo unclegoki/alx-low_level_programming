@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "_putchar.c"
 /**
  * print_chessboard - to print a chessboard
  * @a: location of tiles
@@ -12,8 +12,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			putchar(a[i][j]);
+			_putchar(a[i][j]);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }

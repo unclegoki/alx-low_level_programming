@@ -2,7 +2,7 @@
 
 /**
  * add - sums up 2 arguments
- * @a first arg
+ * @a: first arg
  * @b: second arg
  * Return: sum
  */

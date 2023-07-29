@@ -10,7 +10,7 @@ int main (int argc, char *argv[])
 {
 	int args;
 
-	for (args = 0; x < argc; x++)
+	for (args = 0; args < argc; args++)
 	{
 		printf("%s\n", argv[args]);
 	}

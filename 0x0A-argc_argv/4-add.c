@@ -8,41 +8,41 @@
  */
 int _atoi(char *s)
 {
-        int i, j, k, l, m, digit;
+	int i, j, k, l, m, digit;
 
-        i = 0;
-        j = 0;
-        k = 0;
-        l = 0;
-        m = 0;
-        digit = 0;
+	i = 0;
+	j = 0;
+	k = 0;
+	l = 0;
+	m = 0;
+	digit = 0;
 
-        while (s[l] != '\0')
-                l++;
+	while (s[l] != '\0')
+		l++;
 
-        while (i < l && m == 0)
-        {
-                if (s[i] == '-')
-                        ++j;
+	while (i < l && m == 0)
+	{
+		if (s[i] == '-')
+			++j;
 
-                if (s[i] >= '0' && s[i] <= '9')
-                {
-                        digit = s[i] - '0';
-                        if (j % 2)
-                                digit = -digit;
-                        k = k * 10 + digit;
-                        m = 1;
-                        if (s[i + 1] < '0' || s[i + 1] > '9')
-                                break;
-                        m = 0;
-                }
-                i++;
-        }
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (j % 2)
+				digit = -digit;
+			k = k * 10 + digit;
+			m = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			m = 0;
+		}
+		i++;
+	}
 
-        if (m == 0)
-                return (0);
+	if (m == 0)
+		return (0);
 
-        return (k);
+	return (k);
 }
 
 /**
@@ -64,8 +64,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[x][y] > '9' || argv[x][y] < '0')
 			{
-				printf("Error\n");
-			
+				printf("Error\n");		
 				return (1);
 			}
 		}

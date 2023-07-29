@@ -1,5 +1,6 @@
 #include <stdarg.h>
-#include "variadic_functions.c"
+#include <stdio.h>
+#include "variadic_functions.h"
 
 /**
  * print_strings - a variadic function to print strings
@@ -17,7 +18,7 @@ void print_strings(const char *separator, const unsigned n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(list, char *);
+		text = va_arg(list, char *);
 		if (!text)
 			text = "(nil)";
 		if (!separator)

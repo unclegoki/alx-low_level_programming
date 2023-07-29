@@ -1,15 +1,13 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
  * print_all - a function that prints anything
  * @format: a list of types of arguments passed to the fxn
  */
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *separator = "";
+	char *text, *separator = "";
 
 	va_list list;
 
@@ -19,33 +17,27 @@ void print_all(const char *const format, ...)
 	{
 		while (format[i])
 		{
-			if (format[i] == 'c')
+			switch (format[i])
 			{
-				printf("%s%c", separator, va_arg(list, int));
+				case 'c':
+					printf("%s%c", separator, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", separator, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", separator, va_arg(list, double));
+					break;
+				case 's':
+					text = va_arg(list, char *);
+					if (!text)
+						text = "(nil)";
+					printf("%s%s", separator, text);
+					break;
+				default:
+					i++;
+					continue;
 			}
-			else if (format[i] == 'i')
-			{
-				printf("%s%d", separator, va_arg(list, int));
-			}
-			else if (format[i] == 'f')
-			{
-				printf("%s%f", separator, va_arg(list, double));
-			}
-			else if (format[i] == 's')
-			{
-				char *text = va_arg(list, char *);
-				if (!text)
-				{
-					text = "(nil)";
-				}
-				printf("%s%s", separator, text);
-			}
-			else
-			{
-				i++;
-				continue;
-			}
-
 			separator = ", ";
 			i++;
 		}
@@ -54,3 +46,4 @@ void print_all(const char *const format, ...)
 	printf("\n");
 	va_end(list);
 }
+

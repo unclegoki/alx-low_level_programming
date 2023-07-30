@@ -2,30 +2,27 @@
 #include "main.h"
 
 /**
- * count_word - a function to count the num of words in a string
+ * count_words - a function to count the num of words in a string
  * @s: string to be checked
  *
  * Return: pointer to an array of words
  */
-int count_word(char *s)
+int count_words(char *s)
 {
-	int x, c, w;
+	int i, n = 0;
 
-	x = 0;
-	w = 0;
-
-	for (c = 0; s[c] != '\0'; c++)
+	for (i = 0; s[i]; i++)
 	{
-		if (s[c] == ' ')
-			x = 0;
-		else if (x == 0)
+		if (s[i] == ' ')
 		{
-			x = 1;
-			w++;
+			if (s[i + 1] != ' ' && s[i + 1] != '\0')
+				n++;
 		}
+		else if (i == 0)
+			n++;
 	}
-
-	return (w);
+	n++;
+	return (n);
 }
 /**
  * **strtow - splits a string into words
@@ -35,44 +32,44 @@ int count_word(char *s)
  */
 char **strtow(char *str)
 {
-	char **arr, *temp;
-	int i, k, length = 0;
-	int words, c = 0;
-	int first, last;
+int i, j, k, l, n = 0, wc = 0;
+	char **w;
 
-	while (*(str + length))
-		length++;
-	words = count_word(str);
-	if (words == 0)
+	if (str == NULL || *str == '\0')
 		return (NULL);
-
-	arr = (char **) malloc(sizeof(char *) * (words + 1));
-	if (arr == NULL)
+	n = count_words(str);
+	if (n == 1)
 		return (NULL);
-
-	for (i = 0; i <= length; i++)
+	w = (char **)malloc(n * sizeof(char *));
+	if (w == NULL)
+		return (NULL);
+	w[n - 1] = NULL;
+	i = 0;
+	while (str[i])
 	{
-		if (str[i] == ' ' || str[i] == '\0')
+		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
-			if (c)
+			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
+				;
+			j++;
+			w[wc] = (char *)malloc(j * sizeof(char));
+			j--;
+			if (w[wc] == NULL)
 			{
-				last = i;
-				temp = (char *) malloc(sizeof(char) * (c + 1));
-				if (temp == NULL)
-					return (NULL);
-				while (first < last)
-					*temp++ = str[first++];
-				*temp = '\0';
-				arr[k] = temp - c;
-				k++;
-				c = 0;
+				for (k = 0; k < wc; k++)
+					free(w[k]);
+				free(w[n - 1]);
+				free(w);
+				return (NULL);
 			}
+			for (l = 0; l < j; l++)
+				w[wc][l] = str[i + l];
+			w[wc][l] = '\0';
+			wc++;
+			i += j;
 		}
-		else if (c++ == 0)
-			first = i;
+		else
+			i++;
 	}
-
-	arr[k] = NULL;
-
-	return (arr);
+	return (w);	
 }

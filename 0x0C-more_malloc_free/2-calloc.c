@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
-*_calloc - a function allocates memory for an array
-*@nmemb: number of members of the array
-*@size: the size of the array
+ *_calloc - a function allocates memory for an array
+ *@nmemb: number of members of the array
+ *@size: the size of the array
+ *Return: an array
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {

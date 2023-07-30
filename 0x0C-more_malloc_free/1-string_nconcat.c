@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < nsout; i++)
 		if (i < ns1)
 			str_out[i] = s1[i];
-		ense
+		else
 			str_out[i] = s2[i - ns1];
 
 	str_out[i] = '\0';

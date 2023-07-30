@@ -71,5 +71,5 @@ int i, j, k, l, n = 0, wc = 0;
 		else
 			i++;
 	}
-	return (w);	
+	return (w);
 }

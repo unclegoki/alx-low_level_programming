@@ -3,7 +3,7 @@
  * checknums - computes square root recursively using binary search
  * @firstnum: inital number
  * @secnum: last number within the range
- * @m: the given num
+ * @x: the given num
  * Return: sqrt of num
 */
 

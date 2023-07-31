@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * find_prime_number - function to calculate 
+ * find_prime_number - function to calculate
  * if a number is a prime num using recursion
  * @i: the num to evaluate
  * @j: arg to iterate

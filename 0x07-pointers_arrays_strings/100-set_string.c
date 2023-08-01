@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_string: sets the value of string to a char
+ * set_string - sets the value of string to a char
  * @s: string to set to char
  * @to: char to be set
  * Return: void

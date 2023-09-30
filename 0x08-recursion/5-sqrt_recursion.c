@@ -9,12 +9,12 @@
  */
 int _guess_number(int number, int guessed_number)
 {
-        if (guessed_number * guessed_number > number)
-                return (-1);
-        if (guessed_number * guessed_number == number)
-                return (guessed_number);
+	if (guessed_number * guessed_number > number)
+		return (-1);
+	if (guessed_number * guessed_number == number)
+	return (guessed_number);
 
-        return (_guess_number(number, guessed_number + 1));
+	return (_guess_number(number, guessed_number + 1));
 }
 
 /**

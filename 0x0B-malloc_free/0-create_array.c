@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cerate_array - A function that creates an array
+ * create_array - A function that creates an array
  * and initializes it with a specific character
  * @size : the size of the array
  * @c : The char to be initialized with

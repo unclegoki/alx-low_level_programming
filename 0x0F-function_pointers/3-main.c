@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	char operator;
 
 	int (*func)(int, int);
-	
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	first_arg = atoi(argv[1]);
 	sec_arg = atoi(argv[3]);
-	
+
 	func = get_op_func(argv[2]);
 
 	if (!func)

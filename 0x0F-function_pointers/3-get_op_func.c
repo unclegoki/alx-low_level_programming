@@ -3,7 +3,7 @@
  * get_op_func - pointer to function that selects
  * the right function to be performed
  * @s: operator selected by the user
- * Return: pointer to functiokn for the operator 
+ * Return: pointer to function for the operator
  * chosen by the user
  */
 int (*get_op_func(char *s))(int, int)
@@ -24,9 +24,7 @@ int (*get_op_func(char *s))(int, int)
 	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)
-		{
-			 return (ops[i].f);
-		}
+			return (ops[i].f);
 	}
 	return (NULL);
 }

@@ -17,16 +17,15 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	int i, res;
+	int i;
 
 	i = 0;
 
 	while (ops[i].op)
 	{
-		if (strcmp(ops[i].op, s) === 0)
+		if (strcmp(ops[i].op, s) == 0)
 		{
-			res = ops[i].f;
-			return (res);
+			 return (ops[i].f);
 		}
 	}
 	return (NULL);

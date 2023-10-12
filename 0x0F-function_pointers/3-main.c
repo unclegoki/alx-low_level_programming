@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - a program to perform simple operations
  * @argc: number of args
@@ -21,11 +23,11 @@ int main(int argc, char *argv[])
 	first_arg = atoi(argv[1]);
 	sec_arg = atoi(argv[3]);
 	
-	func = get op_func(argv[2]);
+	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
@@ -36,7 +38,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	res = func(arg1, arg2);
+	res = func(first_arg, sec_arg);
 	printf("%d\n", res);
 	return (0);
 }

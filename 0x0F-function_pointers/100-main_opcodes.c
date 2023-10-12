@@ -4,7 +4,7 @@
  * main - Entry point
  * @argc: number of args
  * @argv: array of args
- * Return : 0
+ * Return: returns 0 on success
  */
 int main(int argc, char *argv[])
 {
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	arr = (char *)main;
 	for (i = 0; i < my_bytes; i++)
 	{
-		if (i == (my_bytes - 1))
+		if (i == my_bytes - 1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;
